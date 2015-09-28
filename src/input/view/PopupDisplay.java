@@ -8,11 +8,25 @@ import javax.swing.JOptionPane;
  */
 public class PopupDisplay 
 {
+/**
+ * 	displays the supplied text as a popup window
+ * @param wordsFromSomewhere the text to be displayed
+ */
      public void showResponse(String wordsFromSomewhere)
      {
     	 JOptionPane.showMessageDialog(null, wordsFromSomewhere);
      }
-	
+
+    /**
+     * 
+     */
+     //
+     /**
+     *  displays a popup the supplied string parameter with a field with a field to type in response.
+     * returns answer t supplied question as string
+     * @param stuff
+     * @return
+     */
      public String grabAnswer(String stuff)
 	 {
 		 String answer = "";

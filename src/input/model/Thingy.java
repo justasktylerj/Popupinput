@@ -1,5 +1,10 @@
 package input.model;
 
+/**
+ * 
+ * @author tjar2074
+ *
+ */
 public class Thingy 
 {
     private String name;
@@ -15,7 +20,10 @@ public class Thingy
     
     public Thingy(String name, int age, double weight)
     {
-    	
+    // this. refers to current instance of object	
+    	this.name = name;
+    	this.age = age;
+    	this.weight = weight;	
     }
     
     public String getName()
