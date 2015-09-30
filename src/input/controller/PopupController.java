@@ -12,23 +12,23 @@ public class PopupController
     {
     	myPopups = new PopupDisplay(); 
     }
-	
 	public void start()
     {
         String myName = myPopups.grabAnswer("Type in your name");
 		myPopups.showResponse("You dare speak the name " + myName);
 		
-		String temp = myPopups.grabAnswer("type in your age");
-		int myAge = Integer.parseInt(temp);
+		String userNumber = myPopups.grabAnswer("type in your age");
+		int myAge = Integer.parseInt(userNumber);
 		
-		while(!isInteger(temp))
+		
+		while(!isInteger(userNumber))
 		{
-			temp = myPopups.grabAnswer("Type in a positie integer for your age!!!");
+			userNumber = myPopups.grabAnswer("Type in a positie integer for your age!!!");
 		}
 		
-		if(isInteger(temp))
+		if(isInteger(userNumber))
 		{
-			myAge = Integer.parseInt(temp);
+			myAge = Integer.parseInt(userNumber);
 		}
 		else
 		{
@@ -41,6 +41,10 @@ public class PopupController
 		String tempWeight = myPopups.grabAnswer("type in your weight");
 		double myWeight;
 		
+		while(!isDouble(userNumber))
+		{
+			userNumber = myPopups.grabAnswer("Type in a double for your age!!!");
+		}
 		
 		if(isDouble(tempWeight))
 		{
